@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     <title>HOTEL PANORAMA</title>
+    <link rel="icon" type="images/logo" href="images/logo.jpg">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,114 +23,11 @@
             color: white;
             padding: 1rem 0;
             text-align: center;
+            position: relative;
         }
 
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .gallery img {
-            max-width: 20px;
-            height: 20px;
-        }
-
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        form label {
-            display: block;
-            margin-top: 1rem;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-        }
-
-        form button {
-            display: block;
-            margin: 1rem 0;
-            padding: 0.5rem 2rem;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #333;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        .contact-options {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .contact-button.whatsapp {
-            background-color: #25D366;
-        }
-
-        .contact-button.email {
-            background-color: #333;
-        }
-
-        .contact-button:hover {
-            opacity: 0.8;
-        }
-
-        a[href^="tel"] {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a[href^="tel"]:hover {
-            text-decoration: underline;
+        .logo {
+            max-width: 100px;
         }
 
         .rozha-one-regular {
@@ -137,12 +35,28 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        @media (min-width: 768px) {
+            .logo-wrapper {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .section-center {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header class="bg-dark text-white p-3 rozha-one-regular">
-        <div class="container">
-            <h1><strong>HOTEL PANORAMA</strong></h1>
+        <div class="container position-relative">
+            <h1 class="m-0"><strong>HOTEL PANORAMA</strong></h1>
+            <div class="logo-wrapper d-none d-md-block">
+                <img src="images/logo.jpg" alt="logo hotel" class="logo">
+            </div>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,9 +78,12 @@
                 </div>
             </nav>
         </div>
+        <div class="d-md-none text-center mt-3">
+            <img src="images/logo.jpg" alt="logo hotel" class="logo">
+        </div>
     </header>
 
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 section-center">
         <div class="container">
             <h2 class="mb-4 rozha-one-regular"><strong>Sobre Nosotros</strong></h2>
             <p>
@@ -183,7 +100,7 @@
 
     <hr class="my-5">
 
-    <section id="gallery" class="py-5 bg-light">
+    <section id="gallery" class="py-5 bg-light section-center">
         <div class="container">
             <h2 class="mb-4 rozha-one-regular"><strong>Galería</strong></h2>
             <div class="row">
@@ -214,7 +131,7 @@
 
     <hr class="my-5">
 
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 section-center">
         <div class="container">
             <h2 class="mb-4 rozha-one-regular"><strong>Contacto</strong></h2>
             <p>Para más información, contáctanos a través de WhatsApp o envíanos un correo electrónico.</p>
