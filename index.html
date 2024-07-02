@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <title>HOTEL PANORAMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #646060;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        form button {
+            display: block;
+            margin: 1rem 0;
+            padding: 0.5rem 2rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact-button.whatsapp {
+            background-color: #25D366;
+        }
+
+        .contact-button.email {
+            background-color: #333;
+        }
+
+        .contact-button:hover {
+            opacity: 0.8;
+        }
+
+        a[href^="tel"] {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a[href^="tel"]:hover {
+            text-decoration: underline;
+        }
+
+        .rozha-one-regular {
+            font-family: "Rozha One", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white p-3 rozha-one-regular">
+        <div class="container">
+            <h1><strong>HOTEL PANORAMA</strong></h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 rozha-one-regular"><strong>Sobre Nosotros</strong></h2>
+            <p>
+                Bienvenidos al Hotel Panorama, ubicado en Betulia, Antioquia, en el hermoso suroeste antioqueño. Nuestro hotel se destaca por ofrecer un servicio excepcional y un confort inigualable para todos nuestros huéspedes. Ya sea que esté visitando por negocios o placer, Hotel Panorama es el lugar ideal para su estadía.
+            </p>
+            <p>
+                Nuestra misión es proporcionar una experiencia memorable a cada uno de nuestros visitantes, con habitaciones cómodas, servicios de alta calidad y una atención personalizada que lo hará sentir como en casa. Contamos con modernas instalaciones y una ubicación privilegiada en el corazón de Betulia, lo que facilita el acceso a los principales puntos de interés de la región.
+            </p>
+            <p>
+                Disfrute de la tranquilidad y la belleza natural que rodea a nuestro hotel, y permítanos ser parte de sus momentos más especiales. En Hotel Panorama, cada detalle está pensado para brindarle la mejor experiencia de hospedaje posible.
+            </p>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 rozha-one-regular"><strong>Galería</strong></h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-vistaa.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-habitaciones.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-habi.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-indi.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-entrada.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/hotel-pasillo.jpg" class="img-fluid" alt="Hotel Panorama" style="max-width: 350px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 rozha-one-regular"><strong>Contacto</strong></h2>
+            <p>Para más información, contáctanos a través de WhatsApp o envíanos un correo electrónico.</p>
+            <div class="d-flex flex-column align-items-center mb-3">
+                <div class="mb-3">
+                    <a href="https://wa.me/+573154580996" target="_blank" class="btn btn-success me-2"><i class="bi bi-whatsapp"></i> Enviar Mensaje de WhatsApp Linea #1</a>
+                    <a href="https://wa.me/+573024121324" target="_blank" class="btn btn-success me-2"><i class="bi bi-whatsapp"></i> Enviar Mensaje de WhatsApp Linea #2</a>
+                </div>
+                <div>
+                    <a href="mailto:Johrmancartagenatoro@gmail.com" class="btn btn-dark me-2"><i class="bi bi-envelope-arrow-up-fill"></i> Enviar Correo Electrónico</a>
+                    <a href="https://www.google.com/maps/place/hotel+panorama+betulia/@6.1140578,-75.984528,20z/data=!4m14!1m7!3m6!1s0x8e467167a78fd781:0xdb76b81ded1e8299!2shotel+panorama+betulia!8m2!3d6.1140183!4d-75.9842365!16s%2Fg%2F1ptyy2gm2!3m5!1s0x8e467167a78fd781:0xdb76b81ded1e8299!8m2!3d6.1140183!4d-75.9842365!16s%2Fg%2F1ptyy2gm2?entry=ttu" class="btn btn-dark"><i class="bi bi-geo-alt-fill"></i> Ubicación</a>
+                </div>
+            </div>
+            <p class="text-center">O llámanos al: <a href="tel:6048436197"><i class="bi bi-telephone-outbound-fill"></i> 604 843 61 97</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 rozha-one-regular">
+        <div class="container">
+            <p>&copy; 2024 Hotel Panorama Betulia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
